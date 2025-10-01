@@ -4,7 +4,7 @@ while True:
     try:
         N = int(input("¿Hasta que Número desa llegar?: "))
         if N <= 0:
-            print ("Error: El npumero digitado debe ser mayor a cero")
+            print ("Error: El número digitado debe ser mayor a cero")
             continue
         break
 
