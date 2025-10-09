@@ -22,7 +22,7 @@ while True:
         edades.append(ingresar_edad)
         persona += 1
         #limite de personas
-        if persona > 10:
+        if persona > 3:
             break
     except ValueError:
         print("Error: Ingrese un número entero válido.")
@@ -40,21 +40,20 @@ for edades_recorridas in edades:
         mayor_de_edad += 1
     elif edades_recorridas >= 60 and edades_recorridas <= 120:
         adulto_mayor += 1 
-    
-     
-print(f"En total hay {menor_de_edad} personas menores de edad")
-print(f"El total hay {mayor_de_edad} personas mayores de edad")
-print(f"El total hay {adulto_mayor} personas adulto mayor")
-
-
+        
 #Edad mas alta y mas baja
 edad_baja =min(edades)       
-print (f"la edad mas baja es la de {edad_baja}")
 edad_alta = max(edades)
-print (f"la edad mas alta es la de {edad_alta}")
 
 #promedio de edades
 promedio = sum(edades) / len(edades)
-print (f"El promedio de las edades ingresadas en de {promedio}")   
+    
+print(f"\nResultados del análisis:")
+print(f"- Menores de edad: {menor_de_edad}")
+print(f"- Mayores de edad: {mayor_de_edad}")
+print(f"- Adultos mayores: {adulto_mayor}")
+print (f"- Edad más baja: {edad_baja}")
+print (f"- Edad más alta: {edad_alta}")
+print (f"- Promedio de edades:  {promedio:.2f}")   
 
 
