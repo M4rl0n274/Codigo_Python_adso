@@ -89,9 +89,9 @@ def mostrar_persona():
         if 0 <= pos < len(personas):
             personas[pos].mostrar_info()
         else:
-            print("❌ Posición fuera de rango.")
+            print("Posición fuera de rango.")
     except ValueError:
-        print("❌ Debe ingresar un número válido.")
+        print("Debe ingresar un número válido.")
 
 
 
