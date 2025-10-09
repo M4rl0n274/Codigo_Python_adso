@@ -22,7 +22,7 @@ while True:
         edades.append(ingresar_edad)
         persona += 1
         #limite de personas
-        if persona > 3:
+        if persona > 10:
             break
     except ValueError:
         print("Error: Ingrese un número entero válido.")
